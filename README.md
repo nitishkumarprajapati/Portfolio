@@ -43,7 +43,7 @@ A modern and responsive portfolio website built using **React.js** to showcase m
 
 ## 📸 Preview
 
-![Portfolio Screenshot](./preview.png)
+![Portfolio Screenshot](src/assets/Portfolio.png)
 
 ---
 
@@ -80,7 +80,7 @@ portfolio/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/nitishkumarprajapati/Portfolio.git
 ```
 
 ### Move into Project Folder
@@ -120,22 +120,7 @@ I'm **Nitish Kumar Prajapati**, a B.Tech Computer Science student passionate abo
 
 ---
 
-## 📬 Contact
-
-📧 Email: [your-email@example.com](mailto:your-email@example.com)
-
-💼 LinkedIn: https://linkedin.com/in/your-linkedin-profile
-
-🐙 GitHub: https://github.com/your-github-username
-
----
-
 ## ⭐ Show Your Support
 
 If you like this project, please consider giving it a **star ⭐** on GitHub.
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
