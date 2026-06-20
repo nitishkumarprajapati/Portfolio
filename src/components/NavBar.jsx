@@ -35,7 +35,9 @@ function NavBar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">NK</div>
+     <a href="#home">
+       <div className="logo">NK</div>
+     </a>
 
       <div
         className="menu-icon"
