@@ -2,7 +2,7 @@ import "../Style/Projects.css";
 
 import plantDiseaseImg from "../assets/plant deases.jpeg";
 import diseasePredictionImg from "../assets/prediction.jpeg";
-import portfolioImg from "../assets/portfolio.png";
+import portfolioImg from "../assets/Portfolio.png";
 import teamTaskImg from "../assets/TeamTaskManager.png";
 import wanderLustImg from "../assets/WanderLust.png";
 import AiAssistedImg from "../assets/AiAssited.png";
