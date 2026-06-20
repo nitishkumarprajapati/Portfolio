@@ -1,0 +1,21 @@
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+
+.heart {
+  color: #ff4d4d;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}

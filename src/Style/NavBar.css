@@ -1,0 +1,162 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 8%;
+
+  z-index: 1000;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: var(--primary);
+  color: white;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Hover Text Color */
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* Underline */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 0;
+  height: 3px;
+
+  background: #38bdf8;
+
+  transition: width 0.3s ease;
+}
+
+/* Hover Underline */
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Active Link */
+.nav-links a.active {
+  color: #38bdf8;
+}
+
+/* Active Underline */
+.nav-links a.active::after {
+  width: 100%;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+
+  .logo {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+}
+
+/* Hamburger Icon */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+
+    width: 250px;
+    height: calc(100vh - 80px);
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-top: 40px;
+    gap: 2rem;
+
+    background: rgba(15, 23, 42, 0.98);
+    backdrop-filter: blur(10px);
+
+    transition: right 0.3s ease;
+  }
+
+  .nav-links.active-menu {
+    right: 0;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+  }
+}
